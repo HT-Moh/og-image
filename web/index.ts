@@ -142,16 +142,13 @@ const markdownOptions: DropdownOption[] = [
 ];
 
 const imageLightOptions: DropdownOption[] = [
-    { text: 'ZEIT', value: 'https://assets.zeit.co/image/upload/front/assets/design/zeit-black-triangle.svg' },
-    { text: 'Next.js', value: 'https://assets.zeit.co/image/upload/front/assets/design/nextjs-black-logo.svg' },
-    { text: 'Hyper', value: 'https://assets.zeit.co/image/upload/front/assets/design/hyper-color-logo.svg' },
+    { text: 'Icon', value: 'https://www.datocms.com/images/brand-assets/svg/icon/color/color_d_icon.svg' },
+    { text: 'Icon + Text', value: 'https://www.datocms.com/images/brand-assets/svg/icon-text/color/color_full_logo.svg' },
 ];
 
 const imageDarkOptions: DropdownOption[] = [
-
-    { text: 'ZEIT', value: 'https://assets.zeit.co/image/upload/front/assets/design/zeit-white-triangle.svg' },
-    { text: 'Next.js', value: 'https://assets.zeit.co/image/upload/front/assets/design/nextjs-white-logo.svg' },
-    { text: 'Hyper', value: 'https://assets.zeit.co/image/upload/front/assets/design/hyper-bw-logo.svg' },
+    { text: 'Icon', value: 'https://www.datocms.com/images/brand-assets/svg/icon/white/white_d_icon.svg' },
+    { text: 'Icon + Text', value: 'https://www.datocms.com/images/brand-assets/svg/icon-text/white/white_full_logo.svg' },
 ];
 
 const widthOptions = [
@@ -202,10 +199,10 @@ const App = (_: any, state: AppState, setState: SetState) => {
     };
     const {
         fileType = 'png',
-        fontSize = '100px',
+        fontSize = '125px',
         theme = 'light',
         md = true,
-        text = '**Hello** World',
+        text = '**DatoCMS and ZEIT Now** integration is online!',
         images=[imageLightOptions[0].value],
         widths=[],
         heights=[],

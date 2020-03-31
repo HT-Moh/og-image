@@ -13,7 +13,7 @@ export function parseRequest(req: IncomingMessage) {
     if (Array.isArray(theme)) {
         throw new Error('Expected a single theme');
     }
-    
+
     const arr = pathname.slice(1).split('.');
     let extension = '';
     let text = '';
@@ -45,10 +45,10 @@ function getArray(stringOrArray: string[] | string): string[] {
 }
 
 function getDefaultImages(images: string[], theme: Theme): string[] {
-    if (images.length > 0 && images[0] && images[0].startsWith('https://assets.zeit.co/image/upload/front/assets/design/')) {
+    if (images.length > 0 && images[0] && images[0].startsWith('https://www.datocms.com/images/brand-assets')) {
         return images;
     }
     return theme === 'light'
-    ? ['https://assets.zeit.co/image/upload/front/assets/design/zeit-black-triangle.svg']
-    : ['https://assets.zeit.co/image/upload/front/assets/design/zeit-white-triangle.svg'];
+    ? ['https://www.datocms.com/images/brand-assets/svg/icon-text/color/color_full_logo.svg']
+    : ['https://www.datocms.com/images/brand-assets/svg/icon-text/white/white_full_logo.svg'];
 }
